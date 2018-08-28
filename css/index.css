@@ -1,9 +1,60 @@
+.header {
+  height: 80px;
+  padding-top: 10px;
+  color: #fff;
+  background: url('http://gd.122.gov.cn/static/css/images/ui-header.png') bottom center repeat-x;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: url('http://gd.122.gov.cn/static/css/images/ui-header.png') no-repeat;
+}
+
+.header h1 {
+  margin: 0;
+  line-height: 42px;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 14px;
+}
+
 fieldset {
   border-width: 1px;
 }
 
+legend {
+  padding: 0 8px;
+  vertical-align: middle;
+}
+
+legend .icon {
+  background: url('http://gd.122.gov.cn/static/css/images/ui-color.png') no-repeat;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+}
+
+legend .icon-search {
+  background-position: -360px -70px;
+}
+
+legend .icon-info {
+  background-position: -160px -130px;
+}
+
 .tab {
-  margin-top: 30px;
+  margin-top: 15px;
   border-bottom: 1px solid #737373;
 }
 
@@ -11,7 +62,8 @@ fieldset {
   font-size: 14px;
   font-weight: bold;
   margin-left: 40px;
-  width: 140px;
+  display: inline-block;
+  padding: 0 5px;
   border: 1px solid #737373;
   border-bottom-color: #fff;
   height: 30px;
@@ -50,6 +102,7 @@ fieldset {
   border-collapse: collapse;
   border-spacing: 0;
   text-align: center;
+  font-size: 14px;
 }
 
 .info table tr:hover {
@@ -79,4 +132,34 @@ fieldset {
 
 .info input:hover {
   cursor: pointer;
+}
+
+.info table .title {
+  background-color: #205ecf;
+  color: #fff;
+  text-align: center;
+}
+
+.detail table {
+  text-align: left;
+}
+
+.detail .head {
+  text-align: right;
+  padding-right: 5px;
+  background-color: #cde3f1;
+}
+
+.detail input {
+  padding-left: 5px;
+  text-align: left;
+}
+
+.footer {
+  margin-top: 15px;
+  height: 45px;
+  line-height: 45px;
+  padding-right: 20px;
+  text-align: right;
+  background-color: #ccc;
 }
