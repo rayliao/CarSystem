@@ -26,6 +26,10 @@ fieldset {
   margin-top: 20px;
 }
 
+.search a {
+  text-decoration: none;
+}
+
 .search .input {
   height: 19px;
 }
