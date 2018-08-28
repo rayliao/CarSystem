@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>全国公安交通管理信息综合查询系统</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="tab">
+    <div class="item">
+      临时行驶机动车查询
+    </div>
+  </div>
+  <div class="search">
+    <fieldset>
+      <legend>查询条件</legend>
+      号牌号码：
+      <select>
+        <option value="粤">粤</option>
+      </select>
+      <input class="input" style="width: 120px; margin-right: 50px;" type="text">
+      验证码：
+      <input class="input" style="width: 120px;" type="text">
+      <img class="code" src="http://gd.122.gov.cn/captcha" />
+      <a href="#">看不清楚</a>
+      <button style="height: 30px; margin-left: 50px;">查询</button>
+    </fieldset>
+  </div>
+  <div class="info">
+    <fieldset>
+      <legend>机动车信息</legend>
+      <table>
+        <thead>
+          <tr>
+            <th>号牌号码</th>
+            <th>机动车所有人</th>
+            <th>发动机号</th>
+            <th>车辆识别码</th>
+            <th>临时证序列号</th>
+            <th>厂牌型号</th>
+            <th>有效期</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr title="双击查看详细信息">
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+          </tr>
+          <tr title="双击查看详细信息">
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+            <td><input type="text" value="xxxxx"></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </div>
+  <!-- <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script> -->
+</body>
+
+</html>
