@@ -36,7 +36,8 @@ legend {
 }
 
 legend .icon {
-  background: url('http://gd.122.gov.cn/static/css/images/ui-color.png') no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100%;
   vertical-align: middle;
   margin-bottom: 3px;
   margin-right: 5px;
@@ -46,11 +47,11 @@ legend .icon {
 }
 
 legend .icon-search {
-  background-position: -360px -70px;
+  background-image:  url('../img/search.png');
 }
 
 legend .icon-info {
-  background-position: -160px -130px;
+  background-image:  url('../img/info.png');
 }
 
 .tab {
@@ -155,11 +156,13 @@ legend .icon-info {
   text-align: left;
 }
 
-.footer {
-  margin-top: 15px;
-  height: 45px;
-  line-height: 45px;
-  padding-right: 20px;
-  text-align: right;
-  background-color: #ccc;
+.handle {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.handle button {
+  cursor: pointer;
 }

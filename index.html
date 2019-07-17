@@ -26,6 +26,29 @@
       号牌号码：
       <select>
         <option value="粤">粤</option>
+        <option value="琼">琼</option>
+        <option value="陕">陕</option>
+        <option value="鲁">鲁</option>
+        <option value="辽">辽</option>
+        <option value="桂">桂</option>
+        <option value="川">川</option>
+        <option value="冀">冀</option>
+        <option value="晋">晋</option>
+        <option value="京">京</option>
+        <option value="津">津</option>
+        <option value="吉">吉</option>
+        <option value="黑">黑</option>
+        <option value="苏">苏</option>
+        <option value="浙">浙</option>
+        <option value="皖">皖</option>
+        <option value="闽">闽</option>
+        <option value="赣">赣</option>
+        <option value="豫">豫</option>
+        <option value="鄂">鄂</option>
+        <option value="湘">湘</option>
+        <option value="黔">黔</option>
+        <option value="滇">滇</option>
+        <option value="青">青</option>
       </select>
       <input class="input" style="width: 120px; margin-right: 50px;" type="text">
       验证码：
@@ -41,25 +64,16 @@
       <table>
         <thead>
           <tr>
-            <th>号牌号码</th>
-            <th>机动车所有人</th>
+            <th style="width: 110px;">号牌号码</th>
+            <th style="width: 140px;">机动车所有人</th>
             <th>发动机号</th>
-            <th>车辆识别码</th>
+            <th>车辆识别代码</th>
             <th>临时证序列号</th>
             <th>厂牌型号</th>
-            <th>有效期</th>
+            <th style="width: 80px;">有效期</th>
           </tr>
         </thead>
-        <tbody>
-          <tr title="双击查看详细信息">
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-          </tr>
+        <tbody id="tbody">
           <tr title="双击查看详细信息">
             <td><input type="text"></td>
             <td><input type="text"></td>
@@ -73,10 +87,25 @@
       </table>
     </fieldset>
   </div>
-  <!-- <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script> -->
+  <div class="handle">
+    <button onclick="add()">Add</button>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function add() {
+      $('#tbody').append(`
+          <tr title="双击查看详细信息">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+        `)
+    }
+  </script>
 </body>
 
 </html>
