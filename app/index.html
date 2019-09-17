@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>全国公安交通管理信息综合查询系统</title>
+  <link rel="icon" href="http://gd.122.gov.cn/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="header">
+    <i class="logo"></i>
+    <h1>全国公安交通管理信息综合查询系统</h1>
+    <p>NATIONAL PUBLIC SECURITY TRAFFIC MANAGEMENET INFORMATION INTERRATED QUERY SYSTEM</p>
+  </div>
+  <div class="tab">
+    <div class="item">
+      临时行驶机动车查询
+    </div>
+  </div>
+  <div class="search">
+    <fieldset>
+      <div style="margin-bottom: 10px;">
+        <legend><i class="icon icon-search"></i>查询条件</legend>
+        号牌号码：
+        <div style="display: inline-block; position: relative; bottom: -5px;">
+          <select>
+            <option value="粤">粤</option>
+            <option value="琼">琼</option>
+            <option value="陕">陕</option>
+            <option value="鲁">鲁</option>
+            <option value="辽">辽</option>
+            <option value="桂">桂</option>
+            <option value="川">川</option>
+            <option value="冀">冀</option>
+            <option value="晋">晋</option>
+            <option value="京">京</option>
+            <option value="津">津</option>
+            <option value="吉">吉</option>
+            <option value="黑">黑</option>
+            <option value="苏">苏</option>
+            <option value="浙">浙</option>
+            <option value="皖">皖</option>
+            <option value="闽">闽</option>
+            <option value="赣">赣</option>
+            <option value="豫">豫</option>
+            <option value="鄂">鄂</option>
+            <option value="湘">湘</option>
+            <option value="黔">黔</option>
+            <option value="滇">滇</option>
+            <option value="青">青</option>
+          </select>
+          <input class="input" style="display: block; width: 120px; margin-right: 50px; margin-top: 5px;" type="text">
+        </div>
+        验证码：
+        <input class="input" style="width: 120px;" type="text">
+        <img class="code" src="http://gd.122.gov.cn/captcha" />
+        <a href="#">看不清楚</a>
+        <button style="height: 30px; margin-left: 50px;">查询</button>
+      </div>
+    </fieldset>
+  </div>
+  <div class="info">
+    <fieldset>
+      <legend><i class="icon icon-info"></i>机动车信息</legend>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 110px;">号牌号码</th>
+            <th style="width: 140px;">机动车所有人</th>
+            <th>发动机号</th>
+            <th>车辆识别代码</th>
+            <th>临时证序列号</th>
+            <th>厂牌型号</th>
+            <th style="width: 80px;">有效期</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr title="双击查看详细信息">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </div>
+  <div class="handle">
+    <button onclick="add()">Add</button>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    function add() {
+      $('#tbody').append(`
+          <tr title="双击查看详细信息">
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+          </tr>
+        `)
+    }
+  </script>
+</body>
+
+</html>
