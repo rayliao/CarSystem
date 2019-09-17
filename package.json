@@ -2,8 +2,6 @@
   "name": "car-system",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "A minimal Electron application",
-  "main": "main.js",
   "scripts": {
     "build": "mv app public"
   },
