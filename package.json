@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "mv app public"
+    "build": "mv app public",
+    "server": "gulp browser-sync"
   },
-  "author": "GitHub"
+  "author": "GitHub",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
 }
