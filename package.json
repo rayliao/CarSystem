@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "mv app public",
-    "server": "gulp browser-sync"
+    "start": "gulp browser-sync"
   },
   "author": "GitHub",
   "dependencies": {
