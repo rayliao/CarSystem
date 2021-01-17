@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>广东省公安厅交通管理局互联网交通安全服务管理平台</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://gd.122.gov.cn/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://gd.122.gov.cn/favicon.png"
+      type="image/x-icon"
+    />
+    <link href="./query/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="./query/font-awesome.min.css" rel="stylesheet" />
+    <link href="./query/main.css" rel="stylesheet" media="screen" />
+    <link href="./query/docs.css" rel="stylesheet" media="screen" />
+    <link href="./query/new.css" rel="stylesheet" media="screen" />
+    <link
+      href="./query/bootstrap-fileinput.css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link href="./query/lightbox.css" rel="stylesheet" />
+    <link href="./query/index.css" rel="stylesheet" />
+    <body>
+      <div class="header">
+        <div class="header_body">
+          <div class="container">
+            <div class="row">
+              <a
+                class="span5 header-logo dpB fL cb"
+                href="https://gd.122.gov.cn/"
+                title="回到平台首页"
+              >
+                <i class="ui-header ico-logo dpIB fL"></i>
+                <span
+                  class="header-logo-middle fL"
+                  style="line-height: 38px; width: 300px"
+                  >交通安全综合服务管理平台</span
+                >
+                <span class="header-logo-top fL" id="azdmc"
+                  >广东省公安厅交通管理局</span
+                ><br />
+                <!--<span class="header-logo-bottom fL">https://gd.122.gov.cn</span>-->
+              </a>
+              <div id="mainnav" class="main-nav span7 taR">
+                <a href="https://gd.122.gov.cn/#/index" style="margin-left: 5px"
+                  >首页</a
+                >
+                <a href="https://gd.122.gov.cn/#/ywbl">业务办理</a>
+                <a href="https://gd.122.gov.cn/#map">服务导航</a>
+                <a href="https://gd.122.gov.cn/#/notice">公告公布</a>
+                <a href="https://gd.122.gov.cn/#/inquiry">信息查询</a>
+                <a href="https://gd.122.gov.cn/#/app">APP下载</a>
+                <a
+                  href="https://gd.122.gov.cn/views/helpMain.html?type=/help"
+                  type="/help"
+                  >办事指南</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER END -->
+      <div class="container">
+        <div class="span12" id="hello">
+          <p style="padding-top: 1px">
+            欢迎登录互联网交通安全综合服务管理平台！
+          </p>
+          <p></p>
+        </div>
+      </div>
+      <div class="container member-main">
+        <div class="row">
+          <div class="span2 user-sidebar" id="userSidebar">
+            <ul class="nav nav-list" id="left-nav">
+              <li id="sidebar_menu_1">
+                <a href="https://gd.122.gov.cn/views/member/index.html?index=1">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-check"
+                  ></i>
+                  品牌型号查询</a
+                >
+              </li>
+              <li id="sidebar_menu_11">
+                <a href="https://gd.122.gov.cn/m/showPageVeh">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-truck"
+                  ></i>
+                  临时号牌登记</a
+                >
+              </li>
+              <li id="sidebar_menu_21">
+                <a href="https://gd.122.gov.cn/m/showPageDrv">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-list-alt"
+                  ></i>
+                  临时核销申请</a
+                >
+              </li>
+              <li id="sidebar_menu_31">
+                <a href="https://gd.122.gov.cn/views/member/violation.html">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-check"
+                  ></i>
+                  品牌型号备案申请</a
+                >
+              </li>
+              <li id="sidebar_menu_96">
+                <a href="https://gd.122.gov.cn/views/memacd/proacdlist.html">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-folder-open"
+                  ></i>
+                  临牌登记照片查询</a
+                >
+              </li>
+              <li id="sidebar_menu_62" class="active">
+                <a href="https://gd.122.gov.cn/m/showPageMhs">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-search"
+                  ></i>
+                  临牌核发历史查询</a
+                >
+              </li>
+              <li id="sidebar_menu_7">
+                <a href="https://gd.122.gov.cn/views/mempub/notice.html">
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-search"
+                  ></i>
+                  预录入历史查询</a
+                >
+              </li>
+              <li id="sidebar_menu_90">
+                <a
+                  href="https://gd.122.gov.cn/views/memsgcl/index.html"
+                  title="事故处理进度和结果"
+                >
+                  <i
+                    style="font-size: 18px"
+                    class="icon-fixed-width icon-eye-open"
+                  ></i>
+                  注册用户查询监控</a
+                >
+              </li>
+              <li id="sidebar_menu_93">
+                <a href="https://gd.122.gov.cn/views/mempub/feedback.html">
+                  <i style="font-size: 18px" class="ext-icon-hisotory"></i>
+                  我的意见反馈</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <div id="mem-content">
+              <div class="mem-block">
+                <div class="mem-block-title gcBlue mb10">
+                  <h3>
+                    <i class="icon-server30 ico-color"></i>
+                    临牌核发历史查询
+                  </h3>
+                </div>
+
+                <div id="searchHistory" style="padding-bottom: 10px">
+                  <form class="form-inline" id="formsearch">
+                    <label class="control-label" style="font-size: 14px;">登记时间</label>
+                    <div
+                      class="input-append date form_date"
+                      data-date=""
+                      data-date-format="yyyy-mm-dd"
+                      data-link-field="startTime"
+                      data-link-format="yyyy-mm-dd"
+                    >
+                      <input
+                        size="16"
+                        type="text"
+                        value=""
+                        class="input-medium"
+                      />
+                      <span class="add-on"> <i class="icon-remove"></i> </span>
+                      <span class="add-on"> <i class="icon-th"></i> </span>
+                      <input type="hidden" id="startTime" value="2021-01-01" />
+                    </div>
+                    &nbsp;至&nbsp;
+                    <div
+                      class="input-append date form_date"
+                      data-date=""
+                      data-date-format="yyyy-mm-dd"
+                      data-link-field="endTime"
+                      data-link-format="yyyy-mm-dd"
+                    >
+                      <input
+                        size="16"
+                        type="text"
+                        value=""
+                        class="input-medium"
+                      />
+                      <span class="add-on"> <i class="icon-remove"></i> </span>
+                      <span class="add-on">
+                        <i class="icon-th"></i>
+                      </span>
+                      <input type="hidden" id="endTime" value="2021-01-17" />
+                    </div>
+                  </form>
+                  <form class="form-inline" style="margin-top: 10px">
+                      <label class="sr-only" for="keyword" style="font-size: 14px;">号码号牌</label>
+                      <div class="input-prepend">
+                        <span class="add-on" contenteditable>粤</span>
+                        <input
+                          class="form-control input-medium"
+                          id="keyword"
+                          type="text"
+                          placeholder="请输入号码号牌"
+                        />
+                      </div>
+                    <label class="control-label" for="keyword" style="font-size: 14px;"
+                      >车辆识别代码</label
+                    >
+                    <input class="input-medium" id="keyword" type="text" />
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="historySearch"
+                    >
+                      <i class="icon-search"></i>
+                      查询
+                    </button>
+                  </form>
+                </div>
+
+                <div id="tableContent" class="">
+                  <div class="mem-block" id="operateLogs">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr style="color: #116ec9;">
+                          <th>号牌号码</th>
+                          <th>登记日期</th>
+                          <th>车辆品牌</th>
+                          <th>车辆型号</th>
+                          <th>车辆识别代号</th>
+                          <th>所有人</th>
+                          <th>有效期止</th>
+                          <th>核发人</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody">
+                        <tr title="双击查看详细信息">
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                          <td><div contenteditable></div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="mem-block data-nums">
+                      <p>共 <span id="total">1</span> 条数据</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #0d419d; padding: 40px 25px; color: #fff">
+        <div class="container footContainer">
+          <div class="span12" style="margin: 0" id="footUrl">
+            <div style="width: 112%; margin-left: -6%">
+              <a href="https://gd.122.gov.cn/#/index" class="br">首页</a>
+              <a href="https://gd.122.gov.cn/#/ywbl" class="br">业务办理</a>
+              <a href="https://gd.122.gov.cn/#/map" class="br">服务导航</a>
+              <a href="https://gd.122.gov.cn/#/notice" class="br">公告公布</a>
+              <a href="https://gd.122.gov.cn/#/inquiry" class="br">信息查询</a>
+              <a href="https://gd.122.gov.cn/#/app" class="br">APP下载</a>
+              <a
+                href="https://gd.122.gov.cn/views/helpMain.html?type=/help"
+                type="/help"
+                >办事指南</a
+              >
+            </div>
+          </div>
+          <p style="margin-top: 46px; margin-bottom: 7px">
+            建议您使用IE9+、FireFox、Google
+            Chrome，分辨率1280*800及以上浏览本网站，获得更好用户体验。
+          </p>
+          <p>
+            版权所有 © 2015-2021 公安机关交通管理部门官方发布
+            <span id="footversion">V1.22.1</span>
+          </p>
+          <p style="margin-top: 15px">
+            <a
+              href="https://beian.miit.gov.cn/#/Integrated/index"
+              target="_blank"
+              id="bah"
+              >苏ICP备06012607号-2</a
+            >
+            <a
+              target="_blank"
+              style="color: #85acd7"
+              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32021102000598"
+              id="gabaId"
+            >
+              <img id="batb" src="./query/batb.png" />苏公网安备
+              32021102000598号</a
+            >
+          </p>
+          <div class="span2" id="wzbsFlag">
+            <div class="bc"></div>
+            <div class="dzjgurl"></div>
+            <img class="jtaqwfb" src="./query/jtaqwfb.jpg" />
+            <img class="gabjtkys2" src="./query/gabjtkys2.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="handle">
+        <button onclick="add()">加一行</button>
+      </div>
+      <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        let total = 1
+        function add() {
+          $('#total').text(++total)
+          $('#tbody').append(`
+          <tr title="双击查看详细信息">
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+            <td><div contenteditable></div></td>
+          </tr>
+        `)
+        }
+      </script>
+    </body>
+  </head>
+</html>
