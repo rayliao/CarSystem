@@ -1485,3 +1485,17 @@ input[type='text']::-ms-clear {
   color: #fff;
   text-decoration: underline;
 }
+
+.table th, .table td {
+  text-align: center;
+}
+
+
+.handle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.handle button {
+  background-color: red;
+}
