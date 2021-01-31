@@ -37,7 +37,7 @@
             <div class="row">
               <a
                 class="span5 header-logo dpB fL cb"
-                href="https://gd.122.gov.cn/"
+                href="#"
                 title="回到平台首页"
               >
                 <i class="ui-header ico-logo dpIB fL"></i>
@@ -46,7 +46,7 @@
                   style="line-height: 38px; width: 300px"
                   >交通安全综合服务管理平台</span
                 >
-                <span class="header-logo-top fL" id="azdmc"
+                <span class="header-logo-top fL" id="azdmc" contenteditable
                   >广东省公安厅交通管理局</span
                 ><br />
                 <!--<span class="header-logo-bottom fL">https://gd.122.gov.cn</span>-->
@@ -72,11 +72,14 @@
       </div>
       <!-- HEADER END -->
       <div class="container">
-        <div class="span12" id="hello">
-          <p style="padding-top: 1px">
-            欢迎登录互联网交通安全综合服务管理平台！
-          </p>
-          <p></p>
+        <div style="margin-bottom: 10px; line-height: 33px;">
+          <span>欢迎登录互联网交通安全综合服务管理平台！</span>
+          <div class="fR">
+            <span style="color: #b94a48">请选择服务类型：</span>
+            <select class="input-medium" style="margin-bottom: 0">
+              <option value="0">业务办理</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="container member-main">
@@ -175,10 +178,11 @@
                     临牌核发历史查询
                   </h3>
                 </div>
-
                 <div id="searchHistory" style="padding-bottom: 10px">
                   <form class="form-inline" id="formsearch">
-                    <label class="control-label" style="font-size: 14px;">登记时间</label>
+                    <label class="control-label" style="font-size: 14px"
+                      >登记时间</label
+                    >
                     <div
                       class="input-append date form_date"
                       data-date=""
@@ -218,17 +222,22 @@
                     </div>
                   </form>
                   <form class="form-inline" style="margin-top: 10px">
-                      <label class="sr-only" for="keyword" style="font-size: 14px;">号码号牌</label>
-                      <div class="input-prepend">
-                        <span class="add-on" contenteditable>粤</span>
-                        <input
-                          class="form-control input-medium"
-                          id="keyword"
-                          type="text"
-                          placeholder="请输入号码号牌"
-                        />
-                      </div>
-                    <label class="control-label" for="keyword" style="font-size: 14px;"
+                    <label class="sr-only" for="keyword" style="font-size: 14px"
+                      >号码号牌</label
+                    >
+                    <div class="input-prepend">
+                      <span class="add-on" contenteditable>粤</span>
+                      <input
+                        class="form-control input-medium"
+                        id="keyword"
+                        type="text"
+                        placeholder="请输入号码号牌"
+                      />
+                    </div>
+                    <label
+                      class="control-label"
+                      for="keyword"
+                      style="font-size: 14px"
                       >车辆识别代码</label
                     >
                     <input class="input-medium" id="keyword" type="text" />
@@ -245,9 +254,9 @@
 
                 <div id="tableContent" class="">
                   <div class="mem-block" id="operateLogs">
-                    <table class="table table-striped">
+                    <table class="table">
                       <thead>
-                        <tr style="color: #116ec9;">
+                        <tr style="color: #116ec9">
                           <th>号牌号码</th>
                           <th style="width: 130px">登记日期</th>
                           <th>车辆品牌</th>
@@ -335,7 +344,7 @@
       <div class="handle">
         <button onclick="add()">加一行</button>
       </div>
-      <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+      <script src="./query/jquery.min.js"></script>
       <script>
         let total = 1
         function add() {
