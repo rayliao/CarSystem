@@ -86,16 +86,18 @@
           <thead>
             <tr>
               <th style="width: 110px;">号牌号码</th>
-              <th style="width: 140px;">机动车所有人</th>
+              <th style="width: 95px;">机动车所有人</th>
               <th>发动机号</th>
               <th>车辆识别代码</th>
-              <th>临时证序列号</th>
+              <th style="width: 95px;">临时证序列号</th>
               <th>厂牌型号</th>
-              <th style="width: 80px;">有效期</th>
+              <th style="width: 90px;">有效期止</th>
+              <th>记录状态</th>
             </tr>
           </thead>
           <tbody id="tbody">
             <tr title="双击查看详细信息">
+              <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
@@ -117,6 +119,7 @@
         $('#tbody').append(`
           <tr title="双击查看详细信息">
             <td><div contenteditable></div></td>
+              <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
               <td><div contenteditable></div></td>
