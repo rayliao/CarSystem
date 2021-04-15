@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .seal {
+        color: #d32d1f;
+        border: 3px solid #d32d1f;
+      }
+
+      .seal-text {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="seal">
+      <div class="seal-text" contenteditable>
+        中南海怀仁堂一品带刀侍卫罗三又
+      </div>
+    </div>
+    <div class="handle">
+      <button>放大</button>
+      <button>缩小</button>
+      <button>上</button>
+      <button>下</button>
+      <button>左</button>
+      <button>右</button>
+      <button>隐藏</button>
+    </div>
+  </body>
+  <script src="./query/jquery.min.js"></script>
+  <script>
+    function hide() {
+      $('.handle').hide()
+    }
+    function enlarge() {}
+    function reduce() {}
+  </script>
+</html>
