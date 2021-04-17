@@ -4,15 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>中南海</title>
     <style>
       .seal {
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        width: 130px;
+        padding: 2px 0px;
+        height: 81px;
         color: #d32d1f;
         border: 3px solid #d32d1f;
+        transform: scale(1);
       }
 
       .seal-text {
-        font-size: 14px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 26px;
+        letter-spacing: 2px;
+        transform: rotateY(24deg);
+      }
+
+      .handle {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
       }
     </style>
   </head>
@@ -23,21 +42,49 @@
       </div>
     </div>
     <div class="handle">
-      <button>放大</button>
-      <button>缩小</button>
-      <button>上</button>
-      <button>下</button>
-      <button>左</button>
-      <button>右</button>
-      <button>隐藏</button>
+      <button onclick="enlarge()">放大</button>
+      <button onclick="reduce()">缩小</button>
+      <button onclick="direction('up')">上</button>
+      <button onclick="direction('down')">下</button>
+      <button onclick="direction('left')">左</button>
+      <button onclick="direction('right')">右</button>
+      <button onclick="hide()">打印前点我隐藏</button>
+      <button onclick="circle()">圆角</button>
     </div>
   </body>
-  <script src="./query/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
+    let scale = 1
     function hide() {
       $('.handle').hide()
     }
-    function enlarge() {}
-    function reduce() {}
+    function enlarge() {
+      scale += 0.1
+      $('.seal').css({ transform: 'scale(' + scale + ')' })
+    }
+    function reduce() {
+      scale -= 0.1
+      $('.seal').css({ transform: 'scale(' + scale + ')' })
+    }
+    function direction(d) {
+      const offset = $('.seal').offset()
+      switch (d) {
+        case 'up':
+          $('.seal').css({ top: offset.top - 10 })
+          break
+        case 'down':
+          $('.seal').css({ top: offset.top + 10 })
+          break
+        case 'right':
+          $('.seal').css({ left: offset.left + 10 })
+          break
+        case 'left':
+          $('.seal').css({ left: offset.left - 10 })
+          break
+      }
+    }
+    function circle() {
+      $('.seal').css({ 'border-radius': '4px' })
+    }
   </script>
 </html>
